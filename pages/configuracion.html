@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración - Andrómeda</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../assets/images/LOGO_ANDROMEDA-1.png" alt="Andrómeda Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <div class="nav-link">Corporativo <i class="fas fa-chevron-down"></i></div>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="../pages/corporativo/historia.html"><i
+                                    class="fas fa-history"></i> Historia</a></li>
+                        <li class="dropdown-item"><a href="../pages/corporativo/politicas.html"><i
+                                    class="fas fa-file-contract"></i> Políticas y Valores</a></li>
+                        <li class="dropdown-item"><a href="../pages/corporativo/experiencia.html"><i
+                                    class="fas fa-hard-hat"></i> Nuestra Experiencia</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link">Utilitarios Andrómeda <i class="fas fa-chevron-down"></i></div>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="../pages/utilitarios/activos.html"><i
+                                    class="fas fa-boxes"></i> Administración de Activos</a></li>
+                        <li class="dropdown-item"><a href="../pages/utilitarios/procura.html"><i
+                                    class="fas fa-shopping-cart"></i> Gestión de Procura</a></li>
+                        <li class="dropdown-item"><a href="../pages/utilitarios/correo.html"><i
+                                    class="fas fa-envelope"></i> Correo Web</a></li>
+                        <li class="dropdown-item"><a href="../pages/utilitarios/documentario.html"><i
+                                    class="fas fa-folder-open"></i> Control Documentario</a></li>
+                        <li class="dropdown-item"><a href="../pages/utilitarios/erp_andromeda.html"><i
+                                    class="fas fa-network-wired"></i> ERP Andrómeda</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link">Varios Web <i class="fas fa-chevron-down"></i></div>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="https://www.google.com" target="_blank"><i
+                                    class="fab fa-google"></i> Google</a></li>
+                        <li class="dropdown-item"><a href="https://www.dropbox.com" target="_blank"><i
+                                    class="fab fa-dropbox"></i> Dropbox</a></li>
+                        <li class="dropdown-item"><a href="https://mail.google.com" target="_blank"><i
+                                    class="fas fa-envelope-open-text"></i> Gmail</a></li>
+                        <li class="dropdown-item"><a href="https://drive.google.com" target="_blank"><i
+                                    class="fab fa-google-drive"></i> Drive</a></li>
+                        <li class="dropdown-item"><a href="https://onedrive.live.com" target="_blank"><i
+                                    class="fab fa-microsoft"></i> OneDrive</a></li>
+                        <li class="dropdown-item"><a href="https://gemini.google.com" target="_blank"><i
+                                    class="fas fa-robot"></i> Gemini</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contactos.html" class="nav-link"
+                        style="text-decoration: none; color: inherit;">Contactos</a>
+                </li>
+                <!-- Configuración Link -->
+                <li class="nav-item">
+                    <a href="configuracion.html" class="nav-link active"
+                        style="text-decoration: none; color: inherit;"><i class="fas fa-cog"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 4rem 2rem; max-width: 800px; margin: 0 auto;">
+        <h1>Configuración de página WEB</h1>
+        <p>Personalice su experiencia en el sitio web de Andrómeda.</p>
+
+        <section
+            style="margin-top: 3rem; background: var(--bg-white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h2 style="margin-bottom: 2rem; color: var(--primary-color);">Apariencia</h2>
+
+            <div class="theme-selector">
+                <p style="margin-bottom: 1rem; font-weight: bold;">Modo de Color:</p>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <button class="theme-btn" onclick="setTheme('light')" id="btn-light"
+                        style="padding: 10px 20px; border: 1px solid #ccc; background: #fff; color: #333; cursor: pointer; border-radius: 4px; display: flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-sun"></i> Claro
+                    </button>
+
+                    <button class="theme-btn" onclick="setTheme('dark')" id="btn-dark"
+                        style="padding: 10px 20px; border: 1px solid #ccc; background: #333; color: #fff; cursor: pointer; border-radius: 4px; display: flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-moon"></i> Oscuro
+                    </button>
+
+                    <button class="theme-btn" onclick="setTheme('system')" id="btn-system"
+                        style="padding: 10px 20px; border: 1px solid #ccc; background: #e0e0e0; color: #333; cursor: pointer; border-radius: 4px; display: flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-desktop"></i> Sistema
+                    </button>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">Seleccione "Sistema" para usar la
+                    configuración de su dispositivo.</p>
+            </div>
+        </section>
+
+        <!-- Master Access Section -->
+        <section
+            style="margin-top: 3rem; background: var(--bg-white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h2 style="margin-bottom: 2rem; color: var(--secondary-color);">Acceso Maestro</h2>
+
+            <!-- Login to Admin -->
+            <div id="admin-login-panel">
+                <p style="margin-bottom: 1rem;">Para gestionar el acceso de colaboradores, ingrese la contraseña
+                    maestra.
+                </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <input type="password" id="admin-password" placeholder="Contraseña Maestra"
+                        style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; flex-grow: 1; max-width: 300px;">
+                    <button onclick="loginAdmin()"
+                        style="padding: 10px 20px; background-color: var(--secondary-color); color: white; border: none; border-radius: 4px; cursor: pointer;">
+                        Acceder <i class="fas fa-lock-open"></i>
+                    </button>
+                </div>
+                <p id="login-error" style="color: red; display: none; margin-top: 0.5rem;"><small>Contraseña incorrecta
+                        (Intente: admin123)</small></p>
+            </div>
+
+            <!-- Admin User Management (Hidden by Default) -->
+            <div id="admin-dashboard" style="display: none; animation: fadeIn 0.5s;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                    <h3>Gestión de Usuarios</h3>
+                    <button onclick="logoutAdmin()"
+                        style="color: #666; background: none; border: none; cursor: pointer; text-decoration: underline;">Cerrar
+                        Sesión</button>
+                </div>
+
+                <!-- Add New User -->
+                <div style="background: var(--bg-light); padding: 1.5rem; border-radius: 4px; margin-bottom: 2rem;">
+                    <h4 style="margin-bottom: 1rem;">Crear Nuevo Usuario</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <input type="text" id="new-username" placeholder="Nombre de Usuario"
+                            style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                        <input type="text" id="new-user-role" placeholder="Rol (Ej. Gerente de Proyecto)"
+                            style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+                    <div style="margin-top: 1rem; display: flex; gap: 2rem; flex-wrap: wrap;">
+                        <label><input type="checkbox" id="perm-corp" value="corporativo"> Acceso Corporativo</label>
+                        <label><input type="checkbox" id="perm-util" value="utilitarios"> Acceso Utilitarios</label>
+                        <label><input type="checkbox" id="perm-erp" value="erp"> Acceso ERP</label>
+                    </div>
+                    <button onclick="addUser()"
+                        style="margin-top: 1rem; padding: 8px 16px; background-color: var(--primary-color); color: white; border: none; border-radius: 4px; cursor: pointer;">
+                        <i class="fas fa-plus"></i> Agregar Usuario
+                    </button>
+                </div>
+
+                <!-- User List -->
+                <h4>Usuarios Registrados</h4>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                        <thead>
+                            <tr style="background-color: var(--bg-light); text-align: left;">
+                                <th style="padding: 10px; border-bottom: 2px solid #ccc;">Usuario</th>
+                                <th style="padding: 10px; border-bottom: 2px solid #ccc;">Rol</th>
+                                <th style="padding: 10px; border-bottom: 2px solid #ccc;">Accesos Permitidos</th>
+                                <th style="padding: 10px; border-bottom: 2px solid #ccc;">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="user-table-body">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem;">
+                    <h4><i class="fas fa-vial"></i> Simulación de Acceso</h4>
+                    <p>Seleccione un usuario para simular su navegación:</p>
+                    <select id="user-simulator-select" onchange="simulateUser()"
+                        style="padding: 8px; margin-top: 0.5rem; width: 100%; max-width: 300px;">
+                        <option value="">Seleccionar Usuario...</option>
+                    </select>
+                    <p id="current-simulation"
+                        style="margin-top: 0.5rem; font-weight: bold; color: var(--primary-color);"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Andrómeda Proyectos y Construcciones SRL. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script>
+        // Inline script to handle active state of buttons specifically for this page
+        document.addEventListener('DOMContentLoaded', () => {
+            updateActiveButton();
+        });
+
+        function updateActiveButton() {
+            const currentTheme = localStorage.getItem('theme') || 'system';
+            document.querySelectorAll('.theme-btn').forEach(btn => {
+                btn.style.borderColor = '#ccc';
+                btn.style.boxShadow = 'none';
+            });
+
+            const activeBtn = document.getElementById(`btn-${currentTheme}`);
+            if (activeBtn) {
+                activeBtn.style.borderColor = 'var(--primary-color)';
+                activeBtn.style.boxShadow = '0 0 0 2px var(--primary-color)';
+            }
+        }
+
+        // Hook into the main setTheme to update buttons
+        const originalSetTheme = window.setTheme;
+        window.setTheme = function (theme) {
+            if (typeof originalSetTheme === 'function') {
+                originalSetTheme(theme);
+            }
+            // Manually call update logic if main function doesn't handle UI specific to this page
+            // (Since main.js is shared, it's better to keep page-specific UI logic here or make main.js smarter)
+            // But let's just re-implement the storage set here to be sure, or better, rely on main.js 
+            // and just update UI.
+
+            // Wait for main.js to update storage
+            setTimeout(updateActiveButton, 50);
+        };
+    </script>
+</body>
+
+</html>
