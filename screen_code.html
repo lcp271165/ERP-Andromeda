@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Andrómeda Proyectos y Construcciones SRL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7a2b2b', // Burgundy/Brown from logo
+                        secondary: '#1a1a1a',
+                        teal: '#5fc7d2', // Specific Teal from logo
+                        accent: '#f3f4f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'custom': '8px',
+                    }
+                }
+            }
+        }
+    </script>
+<style data-purpose="custom-typography">
+        body { font-family: 'Inter', sans-serif; }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #7a2b2b;
+            margin: 1rem auto;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .carousel-container {
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .carousel-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+<header class="sticky top-0 z-50 bg-white shadow-sm" data-purpose="main-navigation">
+<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<img alt="Andrómeda Logo" class="w-auto h-14" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACN_dSHRTyAdDpzgjaxLBAxFgjF_sHz9hhlFtAhPB5W3yvAfr4duE5qLL6ndco1l0HRJ6GYimXqSghyB_2Fhp2VNQTjj2_dKpW6KtCWmXx67Y8pLk3GnVR-oOVfWb9O9_fF2IEKZsgtuIpKSXtneSzs35vZ_sIgpdDAv9mO3m-odpGfah_ZHRxw8Y0jqvA8ATA0ldhpgT6Td26jpvwg4fyZrZddvcf1EfByvqafIcv8ymqd6EwdISaLsWnffGn6Td223JmT_Xkjg"/>
+</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-primary hover:text-teal px-3 py-2 text-sm font-bold transition-colors" href="#">Corporativo</a>
+<a class="text-gray-600 hover:text-teal px-3 py-2 text-sm font-semibold transition-colors" href="#">Utilitarios Intranet</a>
+<a class="text-gray-600 hover:text-teal px-3 py-2 text-sm font-semibold transition-colors" href="#">Varios Web</a>
+<a class="text-gray-600 hover:text-teal px-3 py-2 text-sm font-semibold transition-colors" href="#">Contactos</a>
+<a class="text-gray-600 hover:text-teal px-3 py-2 text-sm font-semibold transition-colors" href="#">
+<span class="material-symbols-outlined text-lg align-middle">settings</span>
+</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-gray-600 hover:text-teal" type="button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section with Carousel -->
+<section class="relative h-[600px] overflow-hidden" data-purpose="hero-carousel" id="hero">
+<div class="carousel-container flex h-full overflow-x-auto snap-x snap-mandatory" id="carousel">
+<!-- Slide 1 -->
+<div class="min-w-full h-full relative snap-start">
+<div class="absolute inset-0">
+<img alt="Construcción Industrial" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJZo0H5KIGQwtKY5ds21AwLzSfnfVc54s-N5mym9_OSbK3QhbCWXM-0IgxtjFWleuMb6LmviCsFZq62FrDPnbHdOMfc-xVB1oH5XSntOLvdkZKoo-3rEElZD-6Zt8Phrury0aUfGqzob3HvFqMQveP4o6BB0Mktf9hcsbYMCttZwWlUVrV-jL3YricnhTuS54Ujdou1iunGNb1Hd5vHy94SwnuZPReQhXZ_CeSxXS5dy74OxR4V71d7fPIihJRkou9Nipcnsltvw"/>
+<div class="absolute inset-0 bg-black/50"></div>
+</div>
+<div class="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+<div class="max-w-2xl text-white">
+<h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">Excelencia en Ingeniería y Construcción</h1>
+<p class="text-xl mb-10 text-gray-200">Soluciones integrales para proyectos de infraestructura, minería y edificaciones comerciales con los más altos estándares de calidad.</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-custom font-bold text-lg transition-all transform hover:scale-105 inline-block shadow-lg" href="#proyectos">Ver Proyectos</a>
+<a class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-custom font-bold text-lg transition-all inline-block" href="#contacto">Contáctanos</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="min-w-full h-full relative snap-start">
+<div class="absolute inset-0">
+<img alt="Infraestructura Moderna" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjgXY-mWGKoikW2o-ld-LKFNSR__BXWflBYAQexNXRWS_8bE3x5j_9OsZqsjxhFeIoxnb-F30l976B6HUVuhMycum_c0zREtKkY6FM3ozkSToYZ9GP8Ji_936_ThrSHoHsTpLwT5-Ku3Q4nh8StYYEf17eVMus8eiu41ifBTsFbS9IQQOHSE77oycqjDroQTmEtm6Sj0qzEPlnP5I6ycRGVF_9M64JawDLNOJp4yeRUQGpwyd_MGFyusDxz1uiBgAeosh-DUeqHg"/>
+<div class="absolute inset-0 bg-black/50"></div>
+</div>
+<div class="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+<div class="max-w-2xl text-white">
+<h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">Excelencia en Ingeniería y Construcción</h1>
+<p class="text-xl mb-10 text-gray-200">Impulsamos el desarrollo con infraestructura de vanguardia y tecnología de punta en cada obra.</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-custom font-bold text-lg transition-all transform hover:scale-105 inline-block shadow-lg" href="#proyectos">Ver Proyectos</a>
+<a class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-custom font-bold text-lg transition-all inline-block" href="#contacto">Contáctanos</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 3 -->
+<div class="min-w-full h-full relative snap-start">
+<div class="absolute inset-0">
+<img alt="Plantas Industriales" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHlcMr0O0pwnCNCwGWV-Gf9_-4zmkOPivcfB3z-rx5TGWpfqAtfeYYWPT-fp4Sx51korKj-xtEmJ-YUYB1acQ6anJ85mp8ptD9W4TwICnLO-3N0qwajuWy0KOF5Is0brsmMKED7krDSwzkMKj95Q5Nk7Eq-JDdTkKxOeoGQW93fucy91xfk4Ki4vvjK780PvXgDh4-xVIXBkktbCyRAQxjXiWFIqoHVn9cpmyEwE-VNMHz-DN6sFeTV2HsvaOH0CHiQ_DWmUofDw"/>
+<div class="absolute inset-0 bg-black/50"></div>
+</div>
+<div class="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+<div class="max-w-2xl text-white">
+<h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">Excelencia en Ingeniería y Construcción</h1>
+<p class="text-xl mb-10 text-gray-200">Compromiso total con la seguridad y la eficiencia en proyectos industriales de gran escala.</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-custom font-bold text-lg transition-all transform hover:scale-105 inline-block shadow-lg" href="#proyectos">Ver Proyectos</a>
+<a class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-custom font-bold text-lg transition-all inline-block" href="#contacto">Contáctanos</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Controls -->
+<button class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-teal text-white p-2 rounded-sm transition-all z-20 focus:outline-none" onclick="document.getElementById('carousel').scrollBy({left: -window.innerWidth, behavior: 'smooth'})">
+<span class="material-symbols-outlined text-4xl">chevron_left</span>
+</button>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-teal text-white p-2 rounded-sm transition-all z-20 focus:outline-none" onclick="document.getElementById('carousel').scrollBy({left: window.innerWidth, behavior: 'smooth'})">
+<span class="material-symbols-outlined text-4xl">chevron_right</span>
+</button>
+<!-- Indicators -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+<button class="w-12 h-1 bg-teal rounded-full opacity-100" onclick="document.getElementById('carousel').scrollTo({left: 0, behavior: 'smooth'})"></button>
+<button class="w-12 h-1 bg-white/50 hover:bg-teal rounded-full transition-all" onclick="document.getElementById('carousel').scrollTo({left: window.innerWidth, behavior: 'smooth'})"></button>
+<button class="w-12 h-1 bg-white/50 hover:bg-teal rounded-full transition-all" onclick="document.getElementById('carousel').scrollTo({left: window.innerWidth * 2, behavior: 'smooth'})"></button>
+</div>
+</section>
+<!-- Category Cards -->
+<section class="py-12 bg-[#f8f9fa]">
+<div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 -mt-24 relative z-10">
+<a class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all text-center group border-b-4 border-transparent hover:border-teal" href="#">
+<div class="text-teal mb-4 flex justify-center">
+<span class="material-symbols-outlined text-5xl group-hover:scale-110 transition-transform">history</span>
+</div>
+<h3 class="text-xl font-bold text-gray-800">Historia</h3>
+</a>
+<a class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all text-center group border-b-4 border-transparent hover:border-teal" href="#">
+<div class="text-teal mb-4 flex justify-center">
+<span class="material-symbols-outlined text-5xl group-hover:scale-110 transition-transform">policy</span>
+</div>
+<h3 class="text-xl font-bold text-gray-800">Políticas y Valores</h3>
+</a>
+<a class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all text-center group border-b-4 border-transparent hover:border-teal" href="#">
+<div class="text-teal mb-4 flex justify-center">
+<span class="material-symbols-outlined text-5xl group-hover:scale-110 transition-transform">construction</span>
+</div>
+<h3 class="text-xl font-bold text-gray-800">Nuestros Servicios</h3>
+</a>
+<a class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all text-center group border-b-4 border-transparent hover:border-teal" href="#">
+<div class="text-teal mb-4 flex justify-center">
+<span class="material-symbols-outlined text-5xl group-hover:scale-110 transition-transform">engineering</span>
+</div>
+<h3 class="text-xl font-bold text-gray-800">Nuestra Experiencia</h3>
+</a>
+</div>
+</section>
+<!-- Proyectos Recientes section -->
+<section class="py-24 bg-white" data-purpose="recent-projects-gallery" id="proyectos">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-extrabold text-secondary section-title uppercase">Proyectos Recientes</h2>
+<div class="mt-8 flex flex-wrap justify-center gap-4">
+<button class="bg-primary text-white px-6 py-2 rounded-full text-sm font-bold shadow-md">Todos</button>
+<button class="bg-accent text-gray-600 px-6 py-2 rounded-full text-sm font-bold hover:bg-teal hover:text-white transition-colors">Minería</button>
+<button class="bg-accent text-gray-600 px-6 py-2 rounded-full text-sm font-bold hover:bg-teal hover:text-white transition-colors">Civil</button>
+<button class="bg-accent text-gray-600 px-6 py-2 rounded-full text-sm font-bold hover:bg-teal hover:text-white transition-colors">Eléctrico</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="group relative overflow-hidden rounded-custom aspect-square">
+<img alt="Planta Industrial Las Bambas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6SIhvYM8GRoJeB2sk3KpV5e3w82QH99nds7lS2fJraufkOeR84bI-lMjChbsNtEAjKjjiMHoFNwhzCwVfqLwbsRmLculoOxYLDGCAtiMtTHO83XcvpeYHor-uPQ_TdjF3BTXz9hm1NGryAZ1pc2RoZMYzqmpeUP-G9aH-zxNetinq2qQS6O9QB7S-GVwdiP_JMFSjwL6b_Jwv7NOCigxEMkiRKtxR_B7Nc8zD8UOQ4_C7z2jvDmvpAs66HOxxVlLV5c601aZuuw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
+<span class="text-teal font-bold text-sm mb-2">INFRAESTRUCTURA</span>
+<h4 class="text-xl font-bold">Planta Industrial Las Bambas</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-custom aspect-square">
+<img alt="Módulos Habitacionales Yanacocha" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjt-uwXWQnZpC5gJpYTycvUq2xZY9B7B9vo0TkWrjppUcgSzGVjGH_cQVg804o8HQ5bosu3VuksvRQaeF8GqOEJ5DM25v3CigZzzVKyaCYmXRfzqfezGnYaaIrvrge8opt01N_3auk6JYfagna82vmNhEglwazklDWIOdpHKIu6IzHPK58LsNUC2E54ki3O02hfgLvGWs2tGPXRGeXtAQ9Yjih0i_YNHrQ8qyr0p_it17i16jc6LWH-9l7Sg1QP5MBMAO9QJxcgA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
+<span class="text-teal font-bold text-sm mb-2">EDIFICACIÓN</span>
+<h4 class="text-xl font-bold">Módulos Habitacionales Yanacocha</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-custom aspect-square">
+<img alt="Redes de Agua Antamina" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVi0htKLKfXwajHUdhdxbk0SjWqHimCKyRWF3Q92GtaO5DGK9JcznDcqRvkPh6XQIixhyUFAwFdrI_GWTJW2m5vkk42YXtcSVDqGhtQlure0-p_IUhtGDAX4GGn5kPfMNn771UpBeet-k6jO8F3B2vcz3OvgUKv3wave6aIwAsNUpdwHOl_iz35m73vzZYraqNRu7J_GD3wsLASHqm0Ha887ZY8YqzxKiACzmsjvqhyvO2eeqrrP8RJJWP9F5RIiiXn3w51LJc8g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
+<span class="text-teal font-bold text-sm mb-2">SANITARIAS</span>
+<h4 class="text-xl font-bold">Redes de Agua Antamina</h4>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center">
+<a class="inline-flex items-center gap-3 text-primary font-extrabold uppercase tracking-widest hover:text-teal hover:gap-5 transition-all" href="#">Ver todos los proyectos <span class="material-symbols-outlined">trending_flat</span></a>
+</div>
+</div>
+</section>
+<!-- Contacto section -->
+<section class="py-24 bg-secondary text-white relative overflow-hidden" data-purpose="contact-form-section" id="contacto">
+<div class="max-w-7xl mx-auto px-4 relative z-10">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-extrabold text-white section-title uppercase">Contacto</h2>
+<p class="text-gray-400 mt-4">Estamos listos para hacer realidad su próximo gran proyecto.</p>
+</div>
+<div class="grid lg:grid-cols-3 gap-12">
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 bg-primary flex items-center justify-center rounded-custom shrink-0 shadow-lg">
+<span class="material-symbols-outlined text-white">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1 text-teal">Dirección</h4>
+<p class="text-gray-400">Av. Vía de Evitamiento Mz A lote 39-ATE, Lima, Perú</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 bg-primary flex items-center justify-center rounded-custom shrink-0 shadow-lg">
+<span class="material-symbols-outlined text-white">call</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1 text-teal">Teléfono</h4>
+<p class="text-gray-400">+51 1 6763778</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 bg-primary flex items-center justify-center rounded-custom shrink-0 shadow-lg">
+<span class="material-symbols-outlined text-white">mail</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1 text-teal">Email</h4>
+<p class="text-gray-400">comercial@andromedascrl.com.pe</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<input class="bg-white/5 border-white/10 rounded-custom p-4 text-white focus:ring-teal focus:border-teal transition-all" placeholder="Nombre Completo" type="text"/>
+<input class="bg-white/5 border-white/10 rounded-custom p-4 text-white focus:ring-teal focus:border-teal transition-all" placeholder="Correo Electrónico" type="email"/>
+<input class="md:col-span-2 bg-white/5 border-white/10 rounded-custom p-4 text-white focus:ring-teal focus:border-teal transition-all" placeholder="Asunto" type="text"/>
+<textarea class="md:col-span-2 bg-white/5 border-white/10 rounded-custom p-4 text-white focus:ring-teal focus:border-teal transition-all" placeholder="Su Mensaje" rows="5"></textarea>
+<div>
+<button class="bg-teal hover:bg-teal/90 text-secondary font-bold py-4 px-12 rounded-custom transition-all uppercase tracking-widest text-sm shadow-lg" type="submit">Enviar Mensaje</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-secondary text-gray-400 py-20 border-t border-white/5" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-12">
+<!-- Col 1 -->
+<div class="col-span-1 md:col-span-1">
+<div class="flex flex-col leading-tight mb-6">
+<img alt="Andrómeda Logo" class="h-10 w-auto self-start mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT3R7bspmdzsfeijdGOOvGtIZC-8pZvCLDT6kf3tbnMXt8ylM9NeqXzH-QATfLYZ0Jkc3P0dotjAeUdE28OxPs85xYQPebhhwJCBZnZHHpSTy5ULZmTqkyX_mbbXlQpIOICr1bvP04HeyrB8QC8Z7jsl28iJkDY55H3OMImoPzm2AXw74yitpRD7ktKZCjLZmeHEUWtfDi5Zrtr5IUrvefw5Lr1yV7zQv848wrxxP4ufRWx63gPgd1_GVF_aHHfRY6hKmgxySEiw"/>
+</div>
+<p class="text-sm leading-relaxed mb-6">Empresa peruana líder en el sector construcción, dedicada a brindar soluciones innovadoras y de alta calidad técnica.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-white/5 flex items-center justify-center rounded-full hover:bg-primary hover:text-white transition-all" href="#"><svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a>
+<a class="w-10 h-10 bg-white/5 flex items-center justify-center rounded-full hover:bg-primary hover:text-white transition-all" href="#"><svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a>
+</div>
+</div>
+<!-- Col 2 -->
+<div>
+<h4 class="text-white font-bold mb-6">Enlaces Rápidos</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-teal transition-colors" href="#">Quiénes Somos</a></li>
+<li><a class="hover:text-teal transition-colors" href="#">Servicios Especializados</a></li>
+<li><a class="hover:text-teal transition-colors" href="#">Nuestros Proyectos</a></li>
+<li><a class="hover:text-teal transition-colors" href="#">Bolsa de Trabajo</a></li>
+<li><a class="hover:text-teal transition-colors" href="#">Políticas de Privacidad</a></li>
+</ul>
+</div>
+<!-- Col 3 -->
+<div>
+<h4 class="text-white font-bold mb-6">Nuestros Servicios</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-teal transition-colors" href="#">Obras Civiles</a></li>
+<li><a class="hover:text-teal transition-colors" href="#">Ingeniería Hidráulica</a></li>
+<li><a class="hover:text-teal transition-colors" href="#">Sistemas Eléctricos</a></li>
+<li><a class="hover:text-teal transition-colors" href="#">Módulos Prefabricados</a></li>
+<li><a class="hover:text-teal transition-colors" href="#">Minería y Energía</a></li>
+</ul>
+</div>
+<!-- Col 4 -->
+<div>
+<h4 class="text-white font-bold mb-6">Suscríbete</h4>
+<p class="text-sm mb-4">Reciba nuestras últimas noticias y actualizaciones de proyectos.</p>
+<div class="flex">
+<input class="bg-white/5 border-white/10 rounded-l-custom p-2 text-sm w-full focus:ring-0 focus:border-teal text-white" placeholder="Email" type="email"/>
+<button class="bg-primary text-white p-2 rounded-r-custom hover:bg-teal transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 mt-20 pt-8 border-t border-white/5 text-center text-xs">
+<p>© 2026 Andrómeda Proyectos y Construcciones SRL. Todos los derechos reservados.</p>
+</div>
+</footer>
+<script>
+        const carousel = document.getElementById('carousel');
+        const indicators = document.querySelectorAll('[data-purpose="hero-carousel"] .absolute.bottom-10 button');
+        
+        carousel.addEventListener('scroll', () => {
+            const index = Math.round(carousel.scrollLeft / carousel.offsetWidth);
+            indicators.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.add('bg-teal', 'opacity-100');
+                    dot.classList.remove('bg-white/50');
+                } else {
+                    dot.classList.remove('bg-teal', 'opacity-100');
+                    dot.classList.add('bg-white/50');
+                }
+            });
+        });
+    </script>
+</body></html>
